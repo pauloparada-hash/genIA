@@ -12,9 +12,13 @@ Pesquisa Global da Pearson e AWS (2026)Este estudo focou no ensino superior e en
 
 MELHORES IAs DO MERCADO:
 
+
 Para estudar pelos seus próprios materiais: O NotebookLM permite enviar PDFs, textos e anotações para criar um assistente de estudo baseado exclusivamente nas suas fontes confiáveis.
+
 Para pesquisas com links e referências: O Perplexity AI funciona como um buscador inteligente que traz respostas diretas acompanhadas das fontes originais da internet.
+
 Para explicar conceitos e criar planos de estudo: O ChatGPT ajuda a descomplicar matérias difíceis, simular conversas em outros idiomas e criar cronogramas personalizados.
+
 Para exatas e ciências passo a passo: O Khanmigo (da Khan Academy) orienta o raciocínio sem entregar as respostas prontas, ideal para aprender lógica e matemática.
 
 DESCRIÇÃO: 
