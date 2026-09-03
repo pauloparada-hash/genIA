@@ -7,7 +7,11 @@ ajudar os estudantes a melhorarem seus desempenhos acadêmicos; ajudar alunos a 
 MOTIVAÇÃO:
 
 Muitos estudantes têm dificuldade para estudar e tirar dúvidas sozinhos. Por isso, pensamos em criar um site com IA que ajude nos estudos, explique os conteúdos e facilite o aprendizado.
-Pesquisa TIC Educação (Cetic.br, 2025)Este estudo mapeou a realidade do uso da tecnologia especificamente nas escolas brasileiras.O que descobriu: 7 em cada 10 alunos do Ensino Médio no Brasil já utilizam ferramentas de IA generativa (como ChatGPT e Gemini) para fazer pesquisas e trabalhos escolares.
+
+
+Pesquisa TIC Educação (Cetic.br, 2025) Este estudo mapeou a realidade do uso da tecnologia especificamente nas escolas brasileiras.O que descobriu: 7 em cada 10 alunos do Ensino Médio no Brasil já utilizam ferramentas de IA generativa (como ChatGPT e Gemini) para fazer pesquisas e trabalhos escolares.
+
+
 Pesquisa Global da Pearson e AWS (2026)Este estudo focou no ensino superior e entrevistou estudantes, líderes universitários e empregadores no Brasil e no mundo.O que descobriu: No Brasil, 74% dos estudantes afirmam que a IA torna a faculdade ainda mais essencial.
 
 MELHORES IAs DO MERCADO:
@@ -15,11 +19,15 @@ MELHORES IAs DO MERCADO:
 
 Para estudar pelos seus próprios materiais: O NotebookLM permite enviar PDFs, textos e anotações para criar um assistente de estudo baseado exclusivamente nas suas fontes confiáveis.
 
+
 Para pesquisas com links e referências: O Perplexity AI funciona como um buscador inteligente que traz respostas diretas acompanhadas das fontes originais da internet.
+
 
 Para explicar conceitos e criar planos de estudo: O ChatGPT ajuda a descomplicar matérias difíceis, simular conversas em outros idiomas e criar cronogramas personalizados.
 
+
 Para exatas e ciências passo a passo: O Khanmigo (da Khan Academy) orienta o raciocínio sem entregar as respostas prontas, ideal para aprender lógica e matemática.
+
 
 DESCRIÇÃO: 
 
