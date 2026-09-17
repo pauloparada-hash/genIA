@@ -1,3 +1,5 @@
+<img width="482" height="184" alt="wireframe2" src="https://github.com/user-attachments/assets/c7fbd045-e0fd-40bc-afc5-3e717526358f" />
+
 # genIA
 
 OBJETIVOS: 
@@ -75,6 +77,13 @@ Estrutura do Site
   Histórico das análises da IA.
   Planos de estudo anteriores.
   Evolução do desempenho ao longo do tempo.
+
+<img width="826" height="452" alt="wireframe1" src="https://github.com/user-attachments/assets/10595864-2b1b-4000-af71-ad59b4567901" /> = wireframe 01
+<img width="482" height="184" alt="wireframe2" src="https://github.com/user-attachments/assets/f89239ba-5e92-4a04-82e8-e53426d728a8" /> = wireframe 02
+
+<img width="1541" height="853" alt="design1" src="https://github.com/user-attachments/assets/e20475f1-d6d1-4a71-9cad-904393c109c5" /> = design 01
+<img width="1538" height="850" alt="design2" src="https://github.com/user-attachments/assets/965102b6-d7ec-40b6-89be-b0e4446c13b1" /> = design 02
+
 
 
 
