@@ -96,6 +96,35 @@ Estrutura do Site
 
 = Wireframe de Chat IA
 
+<img width="1869" height="990" alt="Design Nova Senha" src="https://github.com/user-attachments/assets/adb0096e-7f34-47a2-bfaf-df887cd4b6fa" />
+
+= Design Nova Senha
+
+<img width="1869" height="992" alt="Design Cadastro" src="https://github.com/user-attachments/assets/ba0358e1-2529-4312-b8c5-690be2286da4" />
+
+= Design Esqueci a Senha
+
+<img width="1856" height="991" alt="Design Esqueci a Senha" src="https://github.com/user-attachments/assets/ef7d8de0-3a68-443a-928e-d0d8e356637a" />
+
+= Design Esqueci a Senha
+
+<img width="1853" height="991" alt="Design Login" src="https://github.com/user-attachments/assets/6ee48ac7-629a-4b8e-a8a4-f6feffb1e796" />
+
+= Design Login
+
+<img width="1871" height="992" alt="Design Configurações" src="https://github.com/user-attachments/assets/8185eef9-a7c5-4217-a5b0-4ac13075a7a9" />
+
+= Design Configurações
+
+<img width="1872" height="991" alt="Design Chat IA" src="https://github.com/user-attachments/assets/2b9311c5-1c80-41cf-b536-ee20bf88b03d" />
+
+= Design Chat IA
+
+<img width="1854" height="991" alt="Design Dashboard" src="https://github.com/user-attachments/assets/be45a2a2-4c10-4e88-beee-de92f1709dae" />
+
+= Design Dashboard
+
+
 
 
   
