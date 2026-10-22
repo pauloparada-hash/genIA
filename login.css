@@ -1,0 +1,156 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f0f0;
+    color: black;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.tela-login {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    gap: 40px;
+    width: 100%;
+    max-width: 1150px;
+}
+.boas-vindas {
+    flex: 1.4;
+    min-height: 520px;
+    background-color: rgba(43, 43, 253, 0.849);
+    color: white;
+    border-radius: 15px;
+    padding: 70px 40px;
+    text-align: center;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.boas-vindas img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background-color: white;
+    padding: 8px;
+    margin-bottom: 20px;
+}
+.boas-vindas h1 {
+    font-size: 56px;
+    margin: 10px 0;
+}
+.boas-vindas h2 {
+    font-size: 24px;
+    font-weight: normal;
+    margin: 0;
+    opacity: 0.9;
+}
+.login {
+    flex: 1;
+    background-color: white;
+    border-radius: 15px;
+    padding: 35px 30px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.login fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+.login legend {
+    font-size: 28px;
+    font-weight: bold;
+    color: #0f172a;
+    padding: 0;
+    margin-bottom: 20px;
+}
+.login .descricao {
+    font-size: 14px;
+    color: #64748b;
+    margin: 0 0 20px 0;
+    line-height: 1.5;
+}
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 18px;
+}
+.campo label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #64748b;
+}
+.campo input {
+    padding: 12px 14px;
+    font-size: 15px;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    background-color: #f8fafc;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s, background-color 0.2s;
+}
+.campo input:focus {
+    border-color: rgba(43, 43, 253, 0.849);
+    background-color: white;
+    box-shadow: 0 0 0 3px #e8f0ff;
+}
+.botoes {
+    display: flex;
+    gap: 10px;
+    margin-top: 5px;
+}
+.botoes button {
+    flex: 1;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+}
+.botoes button[type="submit"] {
+    background-color: rgba(43, 43, 253, 0.849);
+    color: white;
+}
+.botoes button[type="submit"]:hover {
+    background-color: rgba(30, 30, 220, 0.95);
+}
+.botoes button[type="reset"] {
+    background-color: #e8f0ff;
+    color: rgba(43, 43, 253, 0.849);
+}
+.botoes button[type="reset"]:hover {
+    background-color: #d6e4ff;
+}
+.botoes button:active {
+    transform: scale(0.97);
+}
+.links {
+    margin-top: 22px;
+    padding-top: 18px;
+    border-top: 1px solid #e5e7eb;
+    text-align: center;
+}
+.links p {
+    margin: 8px 0;
+    font-size: 14px;
+    color: #64748b;
+}
+.links a {
+    color: rgba(43, 43, 253, 0.849);
+    font-weight: bold;
+    text-decoration: none;
+}
+.links a:hover {
+    text-decoration: underline;
+}

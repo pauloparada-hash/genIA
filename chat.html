@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GenIA - Chat</title>
+    <link rel="stylesheet" href="chat.css">
+</head>
+<body>
+    <aside class="menu">
+        <div class="menu-logo">
+            <img src="GenIA.png" alt="GenIA">
+            <h1 class="nome">GenIA</h1>
+        </div>
+
+        <nav class="menu-links">
+            <a href="index.html">
+                📊 Dashboard
+            </a>
+            <a href="chat.html" class="ativo">
+                💬 Chat IA
+            </a>
+            <a href="configuracao.html">
+                ⚙️ Configurações
+            </a>
+            <a href="login.html">
+                🗝️ Login
+            </a>
+        </nav>
+
+        <div class="conversas">
+            <button type="button" class="btn-novo-chat">+ Novo chat</button>
+
+            <h3>Conversas recentes</h3>
+            <ul>
+                <li class="conversa-ativa"><a href="#">Plano de estudos do semestre</a></li>
+                <li><a href="#">Dúvidas de Física</a></li>
+                <li><a href="#">Resumo de Biologia</a></li>
+                <li><a href="#">Revisão de Inglês</a></li>
+            </ul>
+        </div>
+
+    </aside>
+
+    <main class="conteudo">
+        <header class="topo-chat">
+            <h2>Chat com a GenIA</h2>
+            <p>Tire suas dúvidas, peça explicações e crie planos de estudos com IA</p>
+        </header>
+
+        <section class="historico-mensagens" role="log" aria-label="Histórico de mensagens">
+
+            <article class="mensagem usuario">
+                <p>Faça um plano de estudos para o próximo semestre</p>
+                <time class="tempo-mensagem" datetime="2026-10-15T13:40">13:40</time>
+            </article>
+
+            <article class="mensagem ia">
+                <p>Com certeza! Aqui vai uma sugestão para o próximo semestre, com base nas suas 8 disciplinas:
+
+                Prioridade alta (mais dificuldade):
+                - Física: 3 sessões por semana.
+                - Química: 3 sessões por semana.
+                - Matemática: 3 sessões por semana.
+
+                Prioridade média:
+                - História e Geografia: 2 sessões por semana cada.
+                - Inglês: 2 sessões por semana.
+
+                Manutenção:
+                - Português e Biologia: 1 sessão por semana cada.
+
+                Cada sessão pode ter 45 minutos de estudo e 10 minutos de revisão. Reserve o fim de semana para refazer exercícios e se preparar para as provas.
+
+                Quer que eu monte o cronograma semana a semana?</p>
+                <time class="tempo-mensagem" datetime="2026-10-15T13:41">13:41</time>
+            </article>
+
+        </section>
+
+        <footer class="entrada">
+            <form action="#" method="POST" class="caixa-texto">
+                <label for="user-message" class="so-leitor-de-tela">Sua mensagem:</label>
+                <textarea id="user-message" name="message" rows="1" placeholder="Escreva sua dúvida aqui..." required></textarea>
+                <button type="submit" class="botao-enviar" aria-label="Enviar mensagem">➔</button>
+            </form>
+
+            <p class="aviso-ia">A GenIA pode cometer erros. Considere verificar informações importantes.</p>
+        </footer>
+    </main>
+</body>
+</html>

@@ -1,0 +1,222 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f0f0;
+    color: black;
+    margin: 0;
+}
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 240px;
+    height: 100vh;
+    background-color: white;
+    padding: 15px 12px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+}
+.menu-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 6px 15px 6px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #e5e7eb;
+}
+.menu-logo img {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+}
+.nome {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0;
+}
+.menu-links {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.menu-links a {
+    display: flex;
+    gap: 12px;
+    padding: 10px 12px;
+    border-radius: 12px;
+    color: rgba(43, 43, 253, 0.849);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 17px;
+}
+.menu-links a:hover {
+    background-color: #e8f0ff;
+}
+
+.conversas {
+    margin-top: 20px;
+    padding-top: 18px;
+    border-top: 1px solid #e5e7eb;
+    overflow-y: auto;
+}
+.btn-novo-chat {
+    width: 100%;
+    background-color: rgba(43, 43, 253, 0.849);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 12px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+.btn-novo-chat:hover {
+    background-color: rgba(30, 30, 220, 0.95);
+}
+.conversas h3 {
+    font-size: 12px;
+    color: #64748b;
+    margin: 0 0 10px 6px;
+}
+.conversas ul {
+    padding: 0;
+    margin: 0;
+}
+.conversas li {
+    margin-bottom: 4px;
+}
+.conversas a {
+    display: block;
+    padding: 10px 12px;
+    border-radius: 12px;
+    font-size: 14px;
+    color: #64748b;
+    text-decoration: none;
+}
+.conversas a:hover {
+    background-color: #f8fafc;
+}
+.conversa-ativa a {
+    background-color: #e8f0ff;
+    color: #0f172a;
+    font-weight: bold;
+}
+.conteudo {
+    margin-left: 240px;
+    height: 100vh;
+    padding: 20px 40px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.topo-chat {
+    background-color: rgba(43, 43, 253, 0.849);
+    color: white;
+    padding: 18px 24px;
+    border-radius: 15px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+}
+.topo-chat h2 {
+    font-size: 26px;
+    font-weight: bold;
+    margin: 0 0 4px 0;
+}
+.topo-chat p {
+    font-size: 15px;
+    margin: 0;
+}
+
+.historico-mensagens {
+    flex-grow: 1;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.mensagem {
+    max-width: 60%;
+    padding: 14px 20px;
+    border-radius: 18px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+.mensagem p {
+    margin: 0;
+    white-space: pre-line; 
+}
+.usuario {
+    align-self: flex-end;
+    background-color: rgba(43, 43, 253, 0.849);
+    color: white;
+    border-bottom-right-radius: 0;
+}
+.ia {
+    align-self: flex-start;
+    background-color: #f1f5f9;
+    color: #0f172a;
+    border-bottom-left-radius: 0;
+}
+.tempo-mensagem {
+    display: block;
+    font-size: 11px;
+    color: #64748b;
+    margin-top: 6px;
+}
+.usuario .tempo-mensagem {
+    text-align: right;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.caixa-texto {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 25px;
+    padding: 6px 8px 6px 18px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+}
+.entrada textarea {
+    flex: 1;
+    min-height: 36px;
+    max-height: 120px;
+    background: transparent;
+    border: none;
+    outline: none;
+    resize: none;
+    padding: 8px 0;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+.botao-enviar {
+    width: 38px;
+    height: 38px;
+    background-color: rgba(43, 43, 253, 0.849);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.botao-enviar:hover {
+    background-color: rgba(30, 30, 220, 0.95);
+}
+.aviso-ia {
+    text-align: center;
+    color: #64748b;
+    font-size: 11px;
+    margin: 10px 0 0 0;
+}
+

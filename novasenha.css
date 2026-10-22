@@ -1,0 +1,153 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f0f0;
+    color: black;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.tela-nova-senha {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    gap: 40px;
+    width: 100%;
+    max-width: 1150px;
+}
+.recuperacao {
+    flex: 1;
+    min-height: 520px;
+    background-color: rgba(43, 43, 253, 0.849);
+    color: white;
+    border-radius: 15px;
+    padding: 70px 40px;
+    text-align: center;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.recuperacao img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background-color: white;
+    padding: 8px;
+    margin-bottom: 20px;
+}
+.recuperacao h1 {
+    font-size: 56px;
+    margin: 10px 0;
+}
+.recuperacao h2 {
+    font-size: 24px;
+    font-weight: normal;
+    margin: 0;
+    opacity: 0.9;
+}
+.novasenha {
+    flex: 1.2;
+    background-color: white;
+    border-radius: 15px;
+    padding: 35px 30px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.novasenha fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+    min-width: 0;
+}
+.novasenha legend {
+    font-size: 28px;
+    font-weight: bold;
+    color: #0f172a;
+    padding: 0;
+    margin-bottom: 20px;
+}
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 18px;
+    min-width: 0;
+}
+.campo label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #64748b;
+}
+.campo input {
+    padding: 12px 14px;
+    font-size: 15px;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    background-color: #f8fafc;
+    outline: none;
+    box-sizing: border-box;
+    width: 100%;
+    transition: border-color 0.2s, box-shadow 0.2s, background-color 0.2s;
+}
+.campo input:focus {
+    border-color: rgba(43, 43, 253, 0.849);
+    background-color: white;
+    box-shadow: 0 0 0 3px #e8f0ff;
+}
+.botoes {
+    display: flex;
+    gap: 10px;
+    margin-top: 5px;
+}
+.botoes button {
+    flex: 1;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+}
+.botoes button[type="submit"] {
+    background-color: rgba(43, 43, 253, 0.849);
+    color: white;
+}
+.botoes button[type="submit"]:hover {
+    background-color: rgba(30, 30, 220, 0.95);
+}
+.botoes button[type="reset"] {
+    background-color: #e8f0ff;
+    color: rgba(43, 43, 253, 0.849);
+}
+.botoes button[type="reset"]:hover {
+    background-color: #d6e4ff;
+}
+.botoes button:active {
+    transform: scale(0.97);
+}
+.links {
+    margin-top: 22px;
+    padding-top: 18px;
+    border-top: 1px solid #e5e7eb;
+    text-align: center;
+}
+.links p {
+    margin: 8px 0;
+    font-size: 14px;
+    color: #64748b;
+}
+.links a {
+    color: rgba(43, 43, 253, 0.849);
+    font-weight: bold;
+    text-decoration: none;
+}
+.links a:hover {
+    text-decoration: underline;
+}
