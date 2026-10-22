@@ -1,5 +1,3 @@
-<img width="482" height="184" alt="wireframe2" src="https://github.com/user-attachments/assets/c7fbd045-e0fd-40bc-afc5-3e717526358f" />
-
 # genIA
 
 OBJETIVOS: 
@@ -78,14 +76,25 @@ Estrutura do Site
   Planos de estudo anteriores.
   Evolução do desempenho ao longo do tempo.
 
-<img width="826" height="452" alt="wireframe1" src="https://github.com/user-attachments/assets/10595864-2b1b-4000-af71-ad59b4567901" /> = wireframe 01
-<img width="482" height="184" alt="wireframe2" src="https://github.com/user-attachments/assets/f89239ba-5e92-4a04-82e8-e53426d728a8" /> = wireframe 02
+<img width="1536" height="1024" alt="Wireframe de Dashboard" src="https://github.com/user-attachments/assets/cc349d32-3c64-4d6e-aa85-ef098607a773" />
 
-<img width="1541" height="853" alt="design1" src="https://github.com/user-attachments/assets/e20475f1-d6d1-4a71-9cad-904393c109c5" /> = design 01
-<img width="1538" height="850" alt="design2" src="https://github.com/user-attachments/assets/965102b6-d7ec-40b6-89be-b0e4446c13b1" /> = design 02
+= Wireframe de Dashboard
 
+<img width="1722" height="913" alt="Wireframe de Configurações" src="https://github.com/user-attachments/assets/4d6d77b4-c3ef-4163-9822-a7c36f5a1da5" />
 
+= Wireframe de Configurações
 
+<img width="1723" height="913" alt="Wireframe de Login" src="https://github.com/user-attachments/assets/6ebee8fb-c30e-425e-874d-f353aca46832" />
+
+= Wireframe de Login
+
+<img width="1724" height="912" alt="Wireframe de Cadastro" src="https://github.com/user-attachments/assets/aa15234a-7b85-427f-856e-0328bd31ccb2" />
+
+= Wireframe de Cadastro
+
+<img width="1672" height="940" alt="Wireframe de Chat IA" src="https://github.com/user-attachments/assets/06c2c93d-dd4f-41f7-8066-5b26d6a9dcd8" />
+
+= Wireframe de Chat IA
 
 
 
