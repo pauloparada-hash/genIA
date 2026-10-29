@@ -1,8 +1,12 @@
+:root{
+    --footer-h: 140px;
+}
 body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: #f0f0f0;
     color: black;
 }
+
 header{
     position: fixed;
     top: 0;
@@ -19,6 +23,9 @@ header{
     background-color: white;
     padding: 15px 12px;
     z-index: 10;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
 }
 .menu-logo{
     display: flex;
@@ -36,6 +43,7 @@ header{
 .nome{
     font-size: 25px;
     font-weight: bold;
+    margin: 0;
 }
 .menu-links{
     display: flex;
@@ -47,7 +55,7 @@ header{
     gap: 12px;
     padding: 10px 12px;
     border-radius: 12px;
-    color:  rgba(43, 43, 253, 0.849);
+    color: rgba(43, 43, 253, 0.849);
     text-decoration: none;
     font-weight: bold;
     font-size: 17px;
@@ -55,153 +63,134 @@ header{
 .menu-links a:hover{
     background-color: #e8f0ff;
 }
+.menu-links a.ativo{
+    background-color: #e8f0ff;
+}
+.usuario{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 6px 10px 6px;
+    margin-top: auto;
+    border-top: 1px solid #e5e7eb;
+}
+.usuario img{
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+}
+.usuario p{
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0;
+}
+.login{
+    display: flex;
+    gap: 8px;
+    padding: 6px 12px;
+    border-radius: 10px;
+    color: rgba(43, 43, 253, 0.849);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 13px;
+}
+.login:hover{
+    background-color: #e8f0ff;
+}
 .conteudo{
     margin-left: 240px;
-    padding: 40px;
+    box-sizing: border-box;
+    padding: 20px 30px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    grid-template-rows: auto auto 1fr auto;
+    gap: 15px;
 }
+.conteudo > *{
+    min-width: 0;
+    min-height: 0;
+}
+
 .banner{
     background-color: rgba(43, 43, 253, 0.849);
     color: white;
-    padding: 15px;
+    padding: 12px 18px;
     border-radius: 15px;
-    margin-top: -20px;
-    height: 70px;
+    margin: 0;
     grid-column: 1 / -1;
 }
 .banner h2{
-    font-size: 30px;
-    margin-top: 3px;
+    font-size: 24px;
     font-weight: bold;
+    margin: 2px 0;
 }
 .banner p{
-    font-size: 15px;
-    margin-top: -25px;
-    margin-bottom: 5px;
+    font-size: 14px;
+    margin: 0;
 }
+
 .container{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+    gap: 15px;
     width: 100%;
     margin: 0;
     grid-column: 1 / -1;
 }
-.mediageral{
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    gap: 4px;
-    padding: 16px 18px;
-    margin: 0;
-    border-radius: 15px;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
-    box-sizing: border-box;
-}
-.mediageral h3{
-    font-size: 28px;
-    font-weight: bold;
-    color: #0f172a;
-    margin: 0;
-}
-.mediageral p{
-    font-size: 13px;
-    font-weight: bold;
-    color: #64748b;
-    margin: 0;
-}
-.disciplina{
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    gap: 4px;
-    padding: 16px 18px;
-    margin: 0;
-    border-radius: 15px;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
-    box-sizing: border-box;
-}
-.disciplina h3{
-    font-size: 28px;
-    font-weight: bold;
-    color: #0f172a;
-    margin: 0;
-}
-.disciplina p{
-    font-size: 13px;
-    font-weight: bold;
-    color: #64748b;
-    margin: 0;
-}
-.atividade{
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    gap: 4px;
-    padding: 16px 18px;
-    margin: 0;
-    border-radius: 15px;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
-    box-sizing: border-box;
-}
-.atividade h3{
-    font-size: 28px;
-    font-weight: bold;
-    color: #0f172a;
-    margin: 0;
-}
-.atividade p{
-    font-size: 13px;
-    font-weight: bold;
-    color: #64748b;
-    margin: 0;
-}
+.mediageral,
+.disciplina,
+.atividade,
 .prova{
     background-color: white;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     gap: 4px;
-    padding: 16px 18px;
+    padding: 12px 18px;
     margin: 0;
     border-radius: 15px;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
     box-sizing: border-box;
 }
+.mediageral h3,
+.disciplina h3,
+.atividade h3,
 .prova h3{
-    font-size: 28px;
+    font-size: 26px;
     font-weight: bold;
     color: #0f172a;
     margin: 0;
 }
+.mediageral p,
+.disciplina p,
+.atividade p,
 .prova p{
     font-size: 13px;
-    font-weight: normal;
+    font-weight: bold;
     color: #64748b;
     margin: 0;
+}
+.prova p{
+    font-weight: normal;
 }
 .disciplinas{
     background-color: white;
     border-radius: 15px;
-    margin-top: 0;
-    padding: 15px;
+    margin: 0;
+    padding: 12px 15px;
     display: grid;
     grid-template-columns: 110px auto 1fr;
     align-items: center;
     align-content: space-evenly;
-    gap: 10px 12px;
+    gap: 6px 12px;
+    overflow: hidden;
 }
 .disciplinas h4{
     grid-column: 1 / -1;
     color: black;
-    font-size: 25px;
+    font-size: 22px;
     font-weight: bold;
-    margin: 0 0 5px 0;
+    margin: 0;
 }
 .disciplinas p{
     margin: 0;
@@ -219,7 +208,7 @@ header{
 .calendario{
     background-color: white;
     border-radius: 15px;
-    margin-top: 0;
+    margin: 0;
     padding: 0;
     overflow: hidden;
 }
@@ -233,29 +222,28 @@ header{
     background-color: rgba(43, 43, 253, 0.849);
     color: white;
     display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    margin-top: 20px;
+    align-items: center;
+    gap: 25px;
+    margin: 0;
     border-radius: 15px;
-    padding: 10px;
-    text-align: center;
+    padding: 17px 20px;
     grid-column: 1 / -1;
 }
 .chat h3{
-    font-size: 25px;
+    font-size: 20px;
     font-weight: bold;
     margin: 0;
-    padding: 15px;
+    padding: 0;
 }
 .chat a{
     color: white;
     text-decoration: none;
     font-size: 15px;
     font-weight: bold;
-    text-align: center;
-    padding: 20px;
+    padding: 10px 16px;
     border-radius: 12px;
-    margin-left: -45px;
+    margin: 0;
+    background-color: rgba(255, 255, 255, 0.2);
 }
 .chat a:hover{
     color: rgb(255, 230, 2);
@@ -263,24 +251,34 @@ header{
 .chat p{
     font-size: 15px;
     font-weight: bold;
-    margin: 20px;
-    margin-left: -35px;
+    margin: 0;
+}
+.chat-robo{
+    height: 80px;
+    width: auto;
+    margin: -10px 0;
+    border-radius: 50%;
+    margin-left: auto;
 }
 footer{
+    position: fixed;
+    bottom: 0;
+    left: 240px;
+    right: 0;
+    height: var(--footer-h);
     background-color: white;
     color: #64748b;
-    margin-left: 240px;
-    padding: 50px 40px;
-    min-height: 140px;
+    padding: 0 50px;
     border-top: 1px solid #e5e7eb;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 20px;
+    gap: 30px;
     box-sizing: border-box;
+    z-index: 10;
 }
 footer p{
-    font-size: 14px;
+    font-size: 18px;
     margin: 0;
 }
 footer br{
@@ -288,16 +286,16 @@ footer br{
 }
 .contato{
     display: flex;
-    text-align: center;
     flex-direction: column;
-    gap: 15px;
-    height: 25px;
+    align-items: flex-end;
+    gap: 8px;
+    height: auto;
 }
 .contato a{
     color: #64748b;
     text-decoration: none;
-    margin-top: -10px;
-    font-size: 14px;
+    margin: 0;
+    font-size: 17px;
 }
 .contato a:hover{
     color: rgba(43, 43, 253, 0.849);
