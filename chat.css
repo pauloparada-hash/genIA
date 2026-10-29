@@ -1,10 +1,14 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+}
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #f0f0f0;
     color: black;
-    margin: 0;
 }
-.menu {
+.menu{
     position: fixed;
     top: 0;
     left: 0;
@@ -12,12 +16,12 @@ body {
     height: 100vh;
     background-color: white;
     padding: 15px 12px;
+    z-index: 10;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    z-index: 10;
 }
-.menu-logo {
+.menu-logo{
     display: flex;
     align-items: center;
     gap: 10px;
@@ -25,22 +29,22 @@ body {
     margin-bottom: 15px;
     border-bottom: 1px solid #e5e7eb;
 }
-.menu-logo img {
+.menu-logo img{
     width: 36px;
     height: 36px;
     border-radius: 50%;
 }
-.nome {
+.nome{
     font-size: 25px;
     font-weight: bold;
     margin: 0;
 }
-.menu-links {
+.menu-links{
     display: flex;
     flex-direction: column;
     gap: 5px;
 }
-.menu-links a {
+.menu-links a{
     display: flex;
     gap: 12px;
     padding: 10px 12px;
@@ -50,10 +54,43 @@ body {
     font-weight: bold;
     font-size: 17px;
 }
-.menu-links a:hover {
+.menu-links a:hover{
     background-color: #e8f0ff;
 }
-
+.menu-links a.ativo{
+    background-color: #e8f0ff;
+}
+.usuario{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 6px 10px 6px;
+    margin-top: auto;
+    border-top: 1px solid #e5e7eb;
+}
+.usuario img{
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+}
+.usuario p{
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0;
+}
+.login{
+    display: flex;
+    gap: 8px;
+    padding: 6px 12px;
+    border-radius: 10px;
+    color: rgba(43, 43, 253, 0.849);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 13px;
+}
+.login:hover{
+    background-color: #e8f0ff;
+}
 .conversas {
     margin-top: 20px;
     padding-top: 18px;
@@ -106,57 +143,62 @@ body {
 .conteudo {
     margin-left: 240px;
     height: 100vh;
-    padding: 20px 40px;
+    padding: 2vh 40px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 1.5vh;
 }
 .topo-chat {
+    flex-shrink: 0;
     background-color: rgba(43, 43, 253, 0.849);
     color: white;
-    padding: 18px 24px;
+    padding: 1.5vh 24px;
     border-radius: 15px;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
 }
 .topo-chat h2 {
-    font-size: 26px;
+    font-size: clamp(20px, 2.8vh, 26px);
     font-weight: bold;
-    margin: 0 0 4px 0;
+    margin: 0 0 2px 0;
 }
 .topo-chat p {
-    font-size: 15px;
+    font-size: clamp(12px, 1.6vh, 15px);
     margin: 0;
 }
-
 .historico-mensagens {
-    flex-grow: 1;
+    flex: 1;
+    min-height: 0;
+    overflow-y: auto;
     background-color: white;
     border-radius: 15px;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
-    padding: 30px;
+    padding: 2vh 24px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    justify-content: flex-start;
+    gap: 1.5vh;
 }
 .mensagem {
-    max-width: 60%;
-    padding: 14px 20px;
+    max-width: 80%;
+    padding: 1.2vh 18px;
     border-radius: 18px;
-    font-size: 14px;
-    line-height: 1.5;
+    font-size: clamp(11px, 1.55vh, 14px);
+    line-height: 1.3;
 }
 .mensagem p {
     margin: 0;
-    white-space: pre-line; 
+    white-space: pre-line;
+    font-weight: normal;
+    font-size: inherit;
 }
-.usuario {
+.mensagem.usuario {
     align-self: flex-end;
     background-color: rgba(43, 43, 253, 0.849);
     color: white;
     border-bottom-right-radius: 0;
 }
-.ia {
+.mensagem.ia {
     align-self: flex-start;
     background-color: #f1f5f9;
     color: #0f172a;
@@ -166,13 +208,15 @@ body {
     display: block;
     font-size: 11px;
     color: #64748b;
-    margin-top: 6px;
+    margin-top: 4px;
 }
-.usuario .tempo-mensagem {
+.mensagem.usuario .tempo-mensagem {
     text-align: right;
     color: rgba(255, 255, 255, 0.8);
 }
-
+.entrada {
+    flex-shrink: 0;
+}
 .caixa-texto {
     display: flex;
     align-items: center;
@@ -180,26 +224,26 @@ body {
     background-color: white;
     border: 1px solid #e5e7eb;
     border-radius: 25px;
-    padding: 6px 8px 6px 18px;
+    padding: 4px 8px 4px 18px;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
     box-sizing: border-box;
 }
 .entrada textarea {
     flex: 1;
-    min-height: 36px;
+    min-height: 32px;
     max-height: 120px;
     background: transparent;
     border: none;
     outline: none;
     resize: none;
-    padding: 8px 0;
+    padding: 6px 0;
     font-size: 14px;
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
 }
 .botao-enviar {
-    width: 38px;
-    height: 38px;
+    width: 36px;
+    height: 36px;
     background-color: rgba(43, 43, 253, 0.849);
     color: white;
     border: none;
@@ -217,6 +261,5 @@ body {
     text-align: center;
     color: #64748b;
     font-size: 11px;
-    margin: 10px 0 0 0;
+    margin: 6px 0 0 0;
 }
-
