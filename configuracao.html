@@ -14,19 +14,27 @@
         </div>
 
         <nav class="menu-links">
-            <a href="index.html" class="ativo">
-                📊 Dashboard
+            <a href="index.html">
+                Dashboard
+            </a>
+            <a href="materiais.html">
+                Materiais e Atividades
             </a>
             <a href="chat.html">
-                💬 Chat IA
+                Chat IA
             </a>
-            <a href="configuracao.html">
-                ⚙️ Configurações
-            </a>
-            <a href="login.html">
-               🗝️ Login
+            <a href="configuracao.html" class="ativo">
+                Configurações
             </a>
         </nav>
+
+        <div class="usuario">
+            <img src="usuario.png" alt="usuario">
+            <p>Usuário</p>
+        </div>
+        <a class="login" href="login.html">
+            Login
+        </a>
     </aside>
 
     <header class="topo">
@@ -39,33 +47,66 @@
             <h3>Modos:</h3>
 
             <div class="item">
-                <p>☀️ Modo Claro</p>
-                <button class="ativar">Ativar Modo Claro</button>
+                <p>Modo Claro</p>
+                <button class="ativar">Ativar</button>
             </div>
             <div class="item">
-                <p>🌙 Modo Escuro</p>
-                <button class="ativar">Ativar Modo Escuro</button>
+                <p>Modo Escuro</p>
+                <button class="ativar">Ativar</button>
+            </div>
+            <div class="item">
+                <p>Seguir Configuração do Dispositivo</p>
+                <button class="ativar">Ativar</button>
+            </div>
+        </section>
+
+        <section class="card">
+            <h3>Modos:</h3>
+
+            <div class="item">
+                <p>Editar Perfil</p>
+                <button class="ativar">Editar</button>
+            </div>
+            <div class="item">
+                <p>Alterar Senha</p>
+                <button class="ativar">Alterar</button>
+            </div>
+            <div class="item">
+                <p>Excluir Conta</p>
+                <button class="ativar">Excluir</button>
             </div>
         </section>
 
         <section class="card">
             <h3>Permissões:</h3>
 
-            <div class="item">
+            <div class="item item-switch">
                 <p>Notificações</p>
-                <button class="ativar">Ativar</button>
+                <label class="switch">
+                    <input type="checkbox" aria-label="Notificações">
+                    <span class="slider"></span>
+                </label>
             </div>
-            <div class="item">
+            <div class="item item-switch">
                 <p>Áudio</p>
-                <button class="ativar">Ativar</button>
+                <label class="switch">
+                    <input type="checkbox" aria-label="Áudio">
+                    <span class="slider"></span>
+                </label>
             </div>
-            <div class="item">
+            <div class="item item-switch">
                 <p>Imagens</p>
-                <button class="ativar">Ativar</button>
+                <label class="switch">
+                    <input type="checkbox" aria-label="Imagens">
+                    <span class="slider"></span>
+                </label>
             </div>
-            <div class="item">
+            <div class="item item-switch">
                 <p>Arquivos</p>
-                <button class="ativar">Ativar</button>
+                <label class="switch">
+                    <input type="checkbox" aria-label="Arquivos">
+                    <span class="slider"></span>
+                </label>
             </div>
         </section>
     </main>
